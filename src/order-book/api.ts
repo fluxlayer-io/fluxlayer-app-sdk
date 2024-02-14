@@ -42,6 +42,8 @@ export const ORDER_BOOK_PROD_CONFIG: ApiBaseUrls = {
   [SupportedChainId.POLYZK_TESTNET]: 'https://api.cow.fi/goerli',
   [SupportedChainId.FUJI]: 'https://api.cow.fi/goerli',
   [SupportedChainId.MUMBAI]: 'https://api.cow.fi/goerli',
+  [SupportedChainId.SEPOLIA]: 'https://api.cow.fi/goerli',
+  [SupportedChainId.OP_TESTNET]: 'https://api.cow.fi/goerli',
 }
 
 /**
@@ -54,6 +56,8 @@ export const ORDER_BOOK_STAGING_CONFIG: ApiBaseUrls = {
   [SupportedChainId.POLYZK_TESTNET]: 'https://barn.api.cow.fi/goerli',
   [SupportedChainId.FUJI]: 'https://barn.api.cow.fi/goerli',
   [SupportedChainId.MUMBAI]: 'https://barn.api.cow.fi/goerli',
+  [SupportedChainId.SEPOLIA]: 'https://barn.api.cow.fi/goerli',
+  [SupportedChainId.OP_TESTNET]: 'https://barn.api.cow.fi/goerli',
 }
 
 function cleanObjectFromUndefinedValues(obj: Record<string, string>): typeof obj {
