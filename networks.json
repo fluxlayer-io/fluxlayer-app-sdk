@@ -83,7 +83,11 @@
     },
     "11155111": {
       "address": "0xf3A3a9e66a4765bCee90bC7DCb6b164a5e12b1B1",
-      "transactionHash": "0x6bba22a00ffcff6bca79aced546e18d2a5a4f4e484a4e4dbafab13daf42f718d"
+      "transactionHash": ""
+    },
+    "11155420": {
+      "address": "0xf3A3a9e66a4765bCee90bC7DCb6b164a5e12b1B1",
+      "transactionHash": ""
     },
     "1442": {
       "address": "0xf3A3a9e66a4765bCee90bC7DCb6b164a5e12b1B1",
@@ -117,7 +121,11 @@
     },
     "11155111": {
       "address": "0xf3A3a9e66a4765bCee90bC7DCb6b164a5e12b1B1",
-      "transactionHash": "0x6bba22a00ffcff6bca79aced546e18d2a5a4f4e484a4e4dbafab13daf42f718d"
+      "transactionHash": ""
+    },
+    "11155420": {
+      "address": "0xf3A3a9e66a4765bCee90bC7DCb6b164a5e12b1B1",
+      "transactionHash": ""
     },
     "1442": {
       "address": "0xf3A3a9e66a4765bCee90bC7DCb6b164a5e12b1B1",
