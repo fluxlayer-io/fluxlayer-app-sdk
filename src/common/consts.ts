@@ -7,6 +7,7 @@ export const BUY_ETH_ADDRESS = '0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE'
 export const EXTENSIBLE_FALLBACK_HANDLER = '0x2f55e8b20D0B9FEFA187AA7d00B6Cbe563605bF5'
 export const COMPOSABLE_COW = '0xfdaFc9d1902f4e0b84f65F49f244b32b31013b74'
 
+export const ALL_SUPPORTED_CHAIN_IDSX = [1, 2, 3, 4]
 /**
  * The list of supported chains.
  */
@@ -19,8 +20,8 @@ export const ALL_SUPPORTED_CHAIN_IDS: SupportedChainId[] = [
   SupportedChainId.POLYZK_TESTNET,
   SupportedChainId.SEPOLIA,
   SupportedChainId.OP_TESTNET,
+  SupportedChainId.HOLESKY,
 ]
-
 /**
  * An object containing the addresses of the CoW Protocol settlement contracts for each supported chain.
  */
