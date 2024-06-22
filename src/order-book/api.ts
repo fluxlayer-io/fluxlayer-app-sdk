@@ -307,6 +307,16 @@ export class OrderBookApi {
   }
 
   /**
+   * Update an order to the order book with signature
+   * @param orderId the unique identifier of the order
+   * @param signature The signed order signature to be submitted.
+   * @param contextOverride Optional context override for this request.
+   */
+  updateOrder(orderId: string, signature: string, contextOverride: PartialApiContext = {}): Promise<UID> {
+    return this.fetch({ path: `/api/v1/orders?orderId=${orderId}`, method: 'PUT', body: signature }, contextOverride)
+  }
+
+  /**
    * Get the native price of a token.
    *
    * **NOTE**: The native price is the price of the token in the native currency of the chain. For example, on Ethereum
