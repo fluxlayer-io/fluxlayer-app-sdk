@@ -21,6 +21,8 @@ export const SUBGRAPH_PROD_CONFIG: ApiBaseUrls = {
   [SupportedChainId.POLYZK_TESTNET]: SUBGRAPH_BASE_URL + '/cow-goerli',
   [SupportedChainId.FUJI]: SUBGRAPH_BASE_URL + '/cow-goerli',
   [SupportedChainId.MUMBAI]: SUBGRAPH_BASE_URL + '/cow-goerli',
+  [SupportedChainId.SEPOLIA]: SUBGRAPH_BASE_URL + '/cow-goerli',
+  [SupportedChainId.OP_TESTNET]: SUBGRAPH_BASE_URL + '/cow-goerli',
 }
 
 /**
@@ -36,6 +38,8 @@ export const SUBGRAPH_STAGING_CONFIG: ApiBaseUrls = {
   [SupportedChainId.POLYZK_TESTNET]: '',
   [SupportedChainId.FUJI]: '',
   [SupportedChainId.MUMBAI]: '',
+  [SupportedChainId.SEPOLIA]: '',
+  [SupportedChainId.OP_TESTNET]: '',
 }
 
 /**
