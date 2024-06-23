@@ -312,8 +312,9 @@ export class OrderBookApi {
    * @param signature The signed order signature to be submitted.
    * @param contextOverride Optional context override for this request.
    */
-  updateOrder(orderId: string, signature: string, contextOverride: PartialApiContext = {}): Promise<UID> {
-    return this.fetch({ path: `/api/v1/orders?orderId=${orderId}`, method: 'PUT', body: signature }, contextOverride)
+  updateOrder(content: object, contextOverride: PartialApiContext = {}): Promise<UID> {
+    // return this.fetch({ path: `/api/v1/orders?orderId=${orderId}`, method: 'PUT', body: signature }, contextOverride)
+    return this.fetch({ path: `/api/v1/orders`, method: 'PUT', body: content }, contextOverride)
   }
 
   /**
