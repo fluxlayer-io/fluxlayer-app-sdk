@@ -11,4 +11,5 @@ export enum SupportedChainId {
   MUMBAI = 80001,
   SEPOLIA = 11155111,
   OP_TESTNET = 11155420,
+  HOLESKY = 17000,
 }

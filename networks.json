@@ -104,6 +104,10 @@
     "43113": {
       "address": "0xf3A3a9e66a4765bCee90bC7DCb6b164a5e12b1B1",
       "transactionHash": ""
+    },
+    "17000": {
+      "address": "0xF62849F9A0B5Bf2913b396098F7c7019b51A820a",
+      "transactionHash": ""
     }
   },
   "GPv2VaultRelayer": {
