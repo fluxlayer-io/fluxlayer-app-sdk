@@ -19,6 +19,7 @@ export const ALL_SUPPORTED_CHAIN_IDS: SupportedChainId[] = [
   SupportedChainId.POLYZK_TESTNET,
   SupportedChainId.SEPOLIA,
   SupportedChainId.OP_TESTNET,
+  SupportedChainId.HOLESKY,
 ]
 
 /**

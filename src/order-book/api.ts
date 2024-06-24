@@ -6,7 +6,7 @@ import {
   NativePriceResponse,
   Order,
   OrderCancellations,
-  OrderCreation,
+  // OrderCreation,
   OrderQuoteRequest,
   OrderQuoteResponse,
   SolverCompetitionResponse,
@@ -44,6 +44,7 @@ export const ORDER_BOOK_PROD_CONFIG: ApiBaseUrls = {
   [SupportedChainId.MUMBAI]: 'https://api.cow.fi/goerli',
   [SupportedChainId.SEPOLIA]: 'https://api.cow.fi/goerli',
   [SupportedChainId.OP_TESTNET]: 'https://api.cow.fi/goerli',
+  [SupportedChainId.HOLESKY]: 'https://api.cow.fi/goerli',
 }
 
 /**
@@ -58,6 +59,7 @@ export const ORDER_BOOK_STAGING_CONFIG: ApiBaseUrls = {
   [SupportedChainId.MUMBAI]: 'https://barn.api.cow.fi/goerli',
   [SupportedChainId.SEPOLIA]: 'https://barn.api.cow.fi/goerli',
   [SupportedChainId.OP_TESTNET]: 'https://barn.api.cow.fi/goerli',
+  [SupportedChainId.HOLESKY]: 'https://barn.api.cow.fi/goerli',
 }
 
 function cleanObjectFromUndefinedValues(obj: Record<string, string>): typeof obj {
@@ -302,7 +304,7 @@ export class OrderBookApi {
    * @param contextOverride Optional context override for this request.
    * @returns The unique identifier of the order.
    */
-  sendOrder(requestBody: OrderCreation, contextOverride: PartialApiContext = {}): Promise<UID> {
+  sendOrder(requestBody: object, contextOverride: PartialApiContext = {}): Promise<UID> {
     return this.fetch({ path: '/api/v1/orders', method: 'POST', body: requestBody }, contextOverride)
   }
 
