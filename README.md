@@ -7,7 +7,7 @@ yarn add ccip-sdk
 
 ### Content
 
-- `OrderBookApi` - provides the ability to retrieve orders and trades from the CoW Protocol order-book, as well as add and cancel them
+- `OrderBookApi` - provides the ability to retrieve orders and trades, as well as add and cancel them
 - `OrderSigningUtils` - serves to sign orders and cancel them using [EIP-712](https://eips.ethereum.org/EIPS/eip-712)
 
 
@@ -25,7 +25,7 @@ const orderSigningUtils = new OrderSigningUtils()
 
 
 ```typescript
-import { OrderBookApi, OrderSigningUtils, SupportedChainId } from '@cowprotocol/cow-sdk'
+import { OrderBookApi, OrderSigningUtils, SupportedChainId } from 'ccip-sdk'
 import { Web3Provider } from '@ethersproject/providers'
 
 const account = 'YOUR_WALLET_ADDRESS'
@@ -72,12 +72,9 @@ Since the API supports different networks and environments, there are some optio
 
 `chainId` - can be one of `SupportedChainId.MAINNET`, `SupportedChainId.GNOSIS_CHAIN`, or `SupportedChainId.GOERLI`
 
-`env` - this parameter affects which environment will be used:
- - `https://api.cow.fi` for `prod` (default)
- - `https://barn.api.cow.fi` for `staging`
 
 ```typescript
-import { OrderBookApi } from '@cowprotocol/cow-sdk'
+import { OrderBookApi } from 'ccip-sdk'
 
 const orderBookApi = new OrderBookApi({
   chainId: SupportedChainId.GOERLI,
@@ -90,7 +87,7 @@ const orderBookApi = new OrderBookApi({
 In case you need to use custom endpoints (e.g. you use a proxy), you can do it this way:
 
 ```typescript
-import { OrderBookApi } from '@cowprotocol/cow-sdk'
+import { OrderBookApi } from 'ccip-sdk'
 
 const orderBookApi = new OrderBookApi({
   chainId: SupportedChainId.GOERLI,
@@ -105,7 +102,7 @@ const orderBookApi = new OrderBookApi({
 
 The *client's* limiter settings can be configured as well:
 ```typescript
-import { OrderBookApi } from '@cowprotocol/cow-sdk'
+import { OrderBookApi } from 'ccip-sdk'
 import { BackoffOptions } from 'exponential-backoff'
 import { RateLimiterOpts } from 'limiter'
 
